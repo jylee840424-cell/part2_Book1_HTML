@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 스타일 주석 */
+        form[name="myForm"] fieldset{
+            width: 400px;
+        }
+        form[name="myForm"] input{
+            width: 385px;
+        }
+        input[type="text"] {
+            background-color: aquamarine;
+            padding: 12px 20px;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+         
+        input[name="input1"]{
+            background-color:#fb96d8;
+            border: dotted;
+        }
+
+        input[name="input2"]{
+            border: none;
+            border-bottom: 2px solid transparent; /* 기본은 투명 */
+            outline: none;
+}
+
+        input[name="input2"]:focus{
+            border-bottom-color: hsl(0, 84%, 43%);
+        }
+    </style>
+</head>
+<body>
+    <h1>폼 스타일 꾸미기</h1>
+    <form action="" name="myForm">
+        <fieldset>
+            <legend>정보 입력</legend>
+            <label for="">input css1</label><br>
+            <input type="text" name="input1"><br>
+            <label for="">input css2</label><br>
+            <input type="text" name="input2"><br>
+            <label for="">input css3</label><br>
+            <input type="text" name="input3"><br>
+            <label for="">input css4</label><br>
+            <input type="text" name="input4"><br>
+        </fieldset>
+    </form>
+</body>
+</html>
